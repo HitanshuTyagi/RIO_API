@@ -17,3 +17,12 @@ def get_users():
         {"id": 1, "name": "John"},
         {"id": 2, "name": "Alice"}
     ]
+
+@app.get("/users/{user_id}")
+def get_user(user_id: int):
+    users = [
+        {"id": 1, "name": "John"},
+        {"id": 2, "name": "Alice"}
+    ]
+    user = next((u for u in users if u["id"] == user_id), None)
+    return user
