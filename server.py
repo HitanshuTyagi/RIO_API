@@ -79,3 +79,7 @@ def ping():
 @app.get("/greet/{name}")
 def greet_user(name: str):
     return {"message": f"Welcome to Rio Health, {name}!"}
+
+@app.get("/riooo")
+def welcome():
+    return {"message": "Welcome to Rio Health"}
