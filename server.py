@@ -26,3 +26,12 @@ def get_user(user_id: int):
     ]
     user = next((u for u in users if u["id"] == user_id), None)
     return user
+@app.get("/ping")
+def ping():
+    return {"status": "ok"}
+
+# 2. Dynamic Name Greeting (Path Parameter)
+@app.get("/greet/{name}")
+def greet_user(name: str):
+    return {"message": f"Welcome to Rio Health, {name}!"}
+
