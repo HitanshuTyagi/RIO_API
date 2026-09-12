@@ -5,7 +5,6 @@ app=FastAPI()
 students = [
     {"id": 1, "name": "Gourav", "course": "CSE", "year": 4},
     {"id": 2, "name": "Rahul", "course": "ECE", "year": 3},
-    {"id": 3, "name": "Ankit", "course": "CSE", "year": 4}
 ]
 
 @app.get("/")
