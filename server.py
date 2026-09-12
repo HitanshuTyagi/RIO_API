@@ -81,3 +81,5 @@ def greet_user(name: str):
 
 print("main commit")
 print("practice commit 1")
+
+print("Server is running on http://localhost:8000")
