@@ -80,3 +80,4 @@ def greet_user(name: str):
     return {"message": f"Welcome to Rio Health, {name}!"}
 
 print("main commit")
+print("practice commit 1")
