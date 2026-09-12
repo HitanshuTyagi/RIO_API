@@ -69,7 +69,7 @@ def get_student(student_id:int):
         if student_id==student.id:
             return student
 
-    return {"message":"Student not found"}
+    return {"message":"Student not found in the database"}
 
 @app.get("/ping")
 def ping():
